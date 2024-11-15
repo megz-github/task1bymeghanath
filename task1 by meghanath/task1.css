@@ -1,0 +1,393 @@
+/* import of the both fonts for "protest guerrilla" and "Josefin Sans" from GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}/*main/full Stylize section*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    color: #3C3D37;
+}/*customizing the layout and typography and full background body*/
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}/*navigation bar*/
+
+nav ul li{
+    display: inline;
+    margin: 0 20px;
+    padding: 100px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}/*inline for any list with custom font*/
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}/*remove the dots of text decoration*/
+
+/*Header section*/
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: lightgray;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.Logo{
+    margin-bottom: 10px;
+}
+.circle-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 200px;
+    text-align: center;
+    background-image: url("logo.png");
+    background-size: cover;
+}/*customizing for the logo*/
+
+
+
+.Page{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1024px;
+}/*Main section of page content*/
+
+.Intro h1{
+    font-size: 80px;
+    margin-left: 20px;
+    font-family: "Protest Guerrilla", sans-serif;
+}/*Increase the font size*/
+
+.Intro h2{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}/*Increase the font size*/
+
+.Intro p{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+}/*modify the font for each lines margin left and bottom*/
+
+.article-content{
+    width: 30%;
+}/* articles section to make element area*/
+
+.article-content h2{
+    font-family: "Protest Guerrilla", sans-serif;
+}/*fonts family*/
+
+.article-content p{
+    font-family: "Josefin Sans", sans-serif;
+}/*fonts family*/
+
+
+.Column{
+    width: 100%;
+    margin: 3px;
+}/*Column Section for contentto sets the margin area on the bottom of an element*/
+
+.Column{
+    margin-bottom: 20px;
+}
+/*group section  for each heading 3 lines and paragragh is for modifying the each seperates line with grid columns*/
+.Groups{
+    padding: 50px;
+    column-count: 3;
+    margin-top: -40px;
+}
+
+.Groups h2{
+    font-size: 46px;
+    font-family: "Protest Guerrilla", sans-serif;
+}/*fonts family, Increase the font size*/
+.Groups p{
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+}/*fonts family*/
+
+
+.Grid-Album{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    gap: 0;
+}/*Album for make 5 grid gallery in each columns and rows*/
+
+.Grid-Album img{
+    max-width: 100%;
+}/*to increase the max-width of content to 100%*/
+
+.Grid-Album img:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 100%;
+}/*1 large and 4 small images with grid section*/
+
+
+.Author{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+    padding: 20px;
+    margin: 0 20px;
+}/*Author Section for flex content*/
+
+.Author-Content{
+    max-width: 600px;
+}/*Increase the maximum of the width content*/
+
+.Author h2{
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+}/*fonts family*/
+
+.Author p{
+    font-size: 1em;
+    line-height: 2;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}/*fonts family*/
+
+.Profile{
+    border-radius: 50%;
+    width: 155px;
+    height: auto;
+}/*customizing the profile*/
+
+
+footer{
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}/*background of black and text with white color of aligning with center and copyright*/
+
+
+/*Desktop viewpoint width screen max-width 1024px*/
+@media screen and (max-width: 1024px){
+    .Intro h1{
+        text-align: center;
+        font-size: 26px;
+        margin-top: 22px;
+    }
+    .Intro h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    .Page{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .Groups{
+        column-count: 3;
+    }
+    .Groups h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    .Grid-Album{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    footer{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+/*Tablet viewpoint width screen min-width 721px max-width 1024px*/
+@media screen and (min-width: 721px) and (max-width: 1024px){
+    body{
+        margin: 0px 20px;
+        padding: 0px;
+    }
+    nav ul li{
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 16px;
+    }
+    .Page{
+        margin: 0px 20px;
+    }
+    .Intro h1{
+        font-size: 68px;
+    }
+    .Intro h2{
+        font-size: 46px;
+    }
+    .Groups{
+        column-count: 1;
+        padding: 30px;
+    }
+    .Groups h2{
+        font-size: 60px;
+    }
+    .Grid-Album{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    .Grid-Album .G1{
+        display: none;
+    }
+    .Author-Content{
+        max-width: 500px;
+    }
+    .Author-Content h2{
+        font-size: 60px;
+    }
+    .Profile{
+        width: 200px;
+    }
+    footer{
+        font-size: 20.5px;
+        text-align: center;
+    }
+}
+
+/*Large Mobile viewpoint width screen min-width 541px max-width 721px*/
+@media screen and (min-width: 541px) and (max-width: 721px){
+    nav ul li{
+        padding: 15px;
+        margin: 0 8px;
+        font-size: 15px;
+    }
+    .circle-img{
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+    }
+    .Page{
+        margin: 0 15px;
+    }
+    .Intro h1{
+        font-size: 66px;
+    }
+    .Intro h2{
+        font-size: 48px;
+    }
+    .Groups{
+        column-count: 1;
+        padding: 25px;
+        margin-top: -30px;
+    }
+    .Groups h2{
+        text-align: center;
+        font-size: 58px;
+    }
+    .Gallery{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .Grid-Album{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Grid-Album .G1{
+        display: none;
+    }
+    .Author{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin: 20px;
+        align-items: center;
+    }
+    .Author-Content{
+        max-width: 400px;
+        align-items: center;
+    }
+    .Author-Content h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Profile{
+        width: 200px;
+        align-items: center;
+    }
+    footer{
+        font-size: 18.6px;
+        text-align: center;
+    }
+}
+
+/*Small Mobile viewpoint width screen min-width 361px max-width 541px*/
+@media screen and (min-width: 361px) and (max-width: 541px){
+    nav ul li{
+        padding: 16px;
+        margin: 0 -4px;
+        font-size: 15px;
+    }
+    .circle-img{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .Intro h1{
+        font-size: 48px;
+    }
+    .Intro h2{
+        font-size: 35px;
+    }
+    .Groups{
+        column-count: 1;
+        padding: 30px;
+    }
+    .Grid-Album{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Grid-Album .G1{
+        display: none;
+    }
+    .Author{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin: 20px;
+        align-items: center;
+    }
+    .Author-Content{
+        max-width: 400px;
+    }
+    .Author-Content h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Profile{
+        width: 200px;
+        align-items: center;
+    }
+    footer{
+        font-size: 18px;
+        text-align: center;
+    }
+}
